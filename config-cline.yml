@@ -5,3 +5,12 @@ spring:
       profile: test   #本次访问的配置项
       label: master
       uri: http://127.0.0.1:3344  #本微服务启动后先去找3344号服务，通过SpringCloudConfig获取GitHub的服务地址
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7002/eureka/
+
+server:
+  port: 12346
